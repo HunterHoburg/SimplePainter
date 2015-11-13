@@ -5,19 +5,19 @@ var row = new Array();
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 // Array for numbering cells
 var hundred = new Array;
-for (var i = 0; i<100;i++) {
+for (var i = 0; i<75;i++) {
   hundred[i] = i;
 }
 // Assigning rows classes
-var bod = document.getElementsByTagName('body')[0];
+var main = document.getElementsByTagName('div')[0];
 for (var i =0; i<50; i++) {
   row[i] = document.createElement('div');
-  bod.appendChild(row[i])
+  main.appendChild(row[i])
   row[i].className=alphabet[i]+' row';
 }
 // Assigning cells classes
 for (var k = 0; k < row.length; k++) {
-  for (var j = 0; j < 100; j++) {
+  for (var j = 0; j < 75; j++) {
     var cells = new Array();
     cells[j] = document.createElement('div');
     cells[j].className=hundred[j]+' cell';
@@ -230,4 +230,74 @@ eraser.addEventListener('click', function() {
     event.target.style.backgroundColor='#ffffff';
   })
 })
+var black = document.getElementsByClassName('0 cell')[1];
+black.style.backgroundColor='#000000';
+black.addEventListener('click', function() {
+  var red = document.addEventListener('click', function() {
+    event.target.style.backgroundColor='#000000';
+  })
+})
+var no27 = document.getElementsByClassName('1 cell')[1];
+no27.style.backgroundColor='#2d2d2c';
+no27.addEventListener('click', function() {
+  var red = document.addEventListener('click', function() {
+    event.target.style.backgroundColor='#2d2d2c';
+  })
+})
+
+var no28 = document.getElementsByClassName('2 cell')[1];
+no28.style.backgroundColor='#3d3d3d';
+no28.addEventListener('click', function() {
+  var red = document.addEventListener('click', function() {
+    event.target.style.backgroundColor='#3d3d3d';
+  })
+})
+
+var no29 = document.getElementsByClassName('3 cell')[1];
+no29.style.backgroundColor='#5e5e5c';
+no29.addEventListener('click', function() {
+  var red = document.addEventListener('click', function() {
+    event.target.style.backgroundColor='#5e5e5c';
+  })
+})
+
+var no30 = document.getElementsByClassName('4 cell')[1];
+no30.style.backgroundColor='#757575';
+no30.addEventListener('click', function() {
+  var red = document.addEventListener('click', function() {
+    event.target.style.backgroundColor='#757575';
+  })
+})
+
+var no31 = document.getElementsByClassName('5 cell')[1];
+no31.style.backgroundColor='#a9a9aa';
+no31.addEventListener('click', function() {
+  var red = document.addEventListener('click', function() {
+    event.target.style.backgroundColor='#a9a9aa';
+  })
+})
+
+var no32 = document.getElementsByClassName('6 cell')[1];
+no32.style.backgroundColor='#c6c3c4';
+no32.addEventListener('click', function() {
+  var red = document.addEventListener('click', function() {
+    event.target.style.backgroundColor='#c6c3c4';
+  })
+})
+var no33 = document.getElementsByClassName('7 cell')[1];
+no33.style.backgroundColor='#cfd0d2';
+no33.addEventListener('click', function() {
+  var red = document.addEventListener('click', function() {
+    event.target.style.backgroundColor='#cfd0d2';
+  })
+})
+var no34 = document.getElementsByClassName('8 cell')[1];
+no34.style.backgroundColor='#ecebeb';
+no34.addEventListener('click', function() {
+  var red = document.addEventListener('click', function() {
+    event.target.style.backgroundColor='#ecebeb';
+  })
+})
+
 //Possibly add undo history?
+console.log(row.length)

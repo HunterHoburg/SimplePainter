@@ -4,8 +4,9 @@
 }
 
 body{
-  border: 1px solid black;
-  width: 1000px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 1125px;
   height: 100%;
 }
 .unselectable {
@@ -14,12 +15,13 @@ body{
   user-select: none;
 }
 .row {
-  height: 9px;
-  width: 1000px;
+  width: 1125px;
+  height: 14px;
+
 }
 .cell{
-  height: 9px;
-  width: 10px;
+  height: 14px;
+  width: 15px;
   display: inline-block;
   margin: 0;
   padding: 0;
